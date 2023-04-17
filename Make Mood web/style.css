@@ -1,0 +1,140 @@
+    body {
+        font-size: 20px;
+        user-select: none;
+        font-family:cursive;
+        /* background-color: rgb(255, 232, 202); */
+    }
+
+    header {
+        margin: 2%;
+    }
+
+    .section {
+        width: 1440px;
+        position: relative;
+        overflow: hidden;
+        max-width: 95%;
+        margin: 30px auto;
+        height: fit-content;
+        background-color: #f2f2f2;
+    }
+
+    .text {
+        margin: 2%;
+    }
+
+    .section2 {
+        width: 1440px;
+        position: relative;
+        overflow: hidden;
+        max-width: 95%;
+        margin: 30px auto;
+        height: 600px;
+        background-color: #efefef;
+    }
+
+
+
+    .buttonR {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        cursor: pointer;
+        line-height:60px;
+        text-align: center;
+        transition: all 0.2s ease-in-out;
+        opacity: 0.8;
+        font-size: 30px;
+    }
+
+    .buttonR:hover {transform: scale(1.1);
+    transition: 0.2s ease-in-out;}
+
+    .buttonL {
+        position: absolute;
+        left: 30px;
+        top: 50%;
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        cursor: pointer;
+        line-height: 60px;
+        text-align: center;
+        transition: all 0.2s ease-in-out;
+        opacity: 0.8;
+        font-size: 30px;
+    }
+
+    .buttonL:hover {transform: scale(1.1);
+        transition: 0.2s ease-in-out;}
+    
+    .slider-image {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .slider-image.active {
+        opacity: 1;
+      }
+
+
+    header a img {
+        width: 20px;
+        float: right;
+    }
+
+    header a img:hover {
+        background-color: lightgrey;
+        opacity: 0.9;
+    }
+
+    header a {
+        text-decoration: none;
+        color: rgb(60, 60, 60);
+    }
+
+
+    @media (max-width:425px) {
+        .section2 {height: 400px;}
+    }
+
+
+    @media (max-width:767px) {
+        
+        
+        .buttonL , .buttonR { 
+            transform: scale(0.7) translateY(-50%);
+        }
+        .buttonL:hover{transform: scale(0.75) translateY(-50%)}
+        .buttonR:hover{transform: scale(0.75) translateY(-50%);}
+
+        .buttonR{right: 0;}
+        .buttonL{left: 0;}
+
+        body { font-size: 16.5px;}
+    }
+
+    @media (min-width:1024px) {
+        .section { height: 400px;}
+        .section2 { height: 700px;}
+    }
+
+    @media (min-width:1440px) {
+        body { font-size: 23px;}
+        header a img { width: 25px;}
+    }
+    @media (min-width:2559px) {
+        body { font-size: 30px;}
+        .section { height: 500px;}
+    }
